@@ -363,7 +363,7 @@ async def test_gemini_never_receives_structured_citizen_profiles():
 # ==============================================================================
 
 def test_groq_provider_default_and_configurable_model():
-    """Verify GroqProvider defaults to primary llama-3.3-70b-versatile and respects env overrides."""
+    """Verify GroqProvider defaults to primary openai/gpt-oss-120b and respects env overrides."""
     p_default = GroqProvider(api_key="mock-key")
     assert p_default.model_name == settings.groq_model
     assert p_default.provider_type == ProviderTypeEnum.GROQ
@@ -416,12 +416,12 @@ async def test_groq_provider_mock_successful_generation():
 
     with patch("httpx.AsyncClient.post", new_callable=AsyncMock) as mock_post:
         mock_post.return_value = mock_resp
-        provider = GroqProvider(api_key="gsk_mock_test_key_123", model="llama-3.3-70b-versatile")
+        provider = GroqProvider(api_key="gsk_mock_test_key_123", model="openai/gpt-oss-120b")
         res = await provider.generate_text("What is PM-KISAN?")
 
         assert res.text == "PM-KISAN provides ₹6,000 per year in three installments."
         assert res.provider == ProviderTypeEnum.GROQ
-        assert res.model == "llama-3.3-70b-versatile"
+        assert res.model == "openai/gpt-oss-120b"
         assert res.tokens_used == 36
 
         call_args = mock_post.call_args
@@ -431,7 +431,7 @@ async def test_groq_provider_mock_successful_generation():
 
         assert "api.groq.com/openai/v1/chat/completions" in url_called
         assert headers_called.get("Authorization") == "Bearer gsk_mock_test_key_123"
-        assert body_called.get("model") == "llama-3.3-70b-versatile"
+        assert body_called.get("model") == "openai/gpt-oss-120b"
         assert body_called.get("messages")[-1]["content"] == "What is PM-KISAN?"
 
 
@@ -443,7 +443,7 @@ async def test_groq_provider_rate_limit_and_secret_suppression():
 
     with patch("httpx.AsyncClient.post", new_callable=AsyncMock) as mock_post:
         mock_post.return_value = mock_resp
-        provider = GroqProvider(api_key="gsk_super_secret_key_xyz", model="llama-3.3-70b-versatile")
+        provider = GroqProvider(api_key="gsk_super_secret_key_xyz", model="openai/gpt-oss-120b")
         with pytest.raises(RuntimeError) as exc_info:
             await provider.generate_text("Test prompt")
         err_msg = str(exc_info.value)
