@@ -44,7 +44,7 @@ class Settings(BaseSettings):
 
     # Groq Cloud LLM Settings
     groq_api_key: Optional[str] = None
-    groq_model: str = "llama-3.3-70b-versatile"
+    groq_model: str = "openai/gpt-oss-120b"
     groq_timeout_seconds: float = 12.0
     groq_nlu_timeout_seconds: float = 6.0
     groq_synthesis_timeout_seconds: float = 7.0
