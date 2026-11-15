@@ -62,6 +62,33 @@ def check_evidence_sufficiency(query: str, results: List[ChunkSearchResult]) -> 
     return has_marker_in_chunks or has_phone_in_chunks
 
 
+_CURRENCY_AMOUNT_RE = re.compile(
+    r"(?:₹|Rs\.?|INR)\s*([0-9][0-9,]*(?:\.[0-9]+)?)\s*"
+    r"(lakh|lakhs|crore|crores|thousand|million|billion)?\b",
+    re.IGNORECASE,
+)
+
+
+def _currency_amount_values(text: str) -> set[float]:
+    """Normalize explicit currency amounts so generated claims can be checked against evidence."""
+    scales = {
+        "": 1,
+        "lakh": 100_000,
+        "lakhs": 100_000,
+        "crore": 10_000_000,
+        "crores": 10_000_000,
+        "thousand": 1_000,
+        "million": 1_000_000,
+        "billion": 1_000_000_000,
+    }
+    values: set[float] = set()
+    for match in _CURRENCY_AMOUNT_RE.finditer(text or ""):
+        amount = float(match.group(1).replace(",", ""))
+        scale = scales.get((match.group(2) or "").lower(), 1)
+        values.add(round(amount * scale, 2))
+    return values
+
+
 class AgentIntelligenceService:
     """
     Coordinates LLMGateway for NLU and grounded synthesis with strict fallback tracking.
@@ -259,7 +286,8 @@ class AgentIntelligenceService:
             "explicitly say that this specific information is not available in your verified scheme records and advise checking the official portal.\n"
             "5. If eligibility status is NEEDS_MORE_INFORMATION, ask at most ONE clear, natural follow-up question for the top missing detail.\n"
             "6. Keep responses clear, conversational, and well-structured with markdown headings or bullets where helpful.\n"
-            "7. If a PROFILE CONFLICT NOTICE is present, politely acknowledge that the citizen's newly stated value differs from their saved profile, explain that this check used the new value, and ask if they would like to update their profile."
+            "7. If a PROFILE CONFLICT NOTICE is present, politely acknowledge that the citizen's newly stated value differs from their saved profile, explain that this check used the new value, and ask if they would like to update their profile.\n"
+            "8. Every factual detail must be traceable to the verified context. Do not supplement it with general model knowledge, omit any amount not explicitly supported by context, and answer the citizen's actual question directly."
         )
 
         # Assemble grounded context
@@ -328,7 +356,23 @@ class AgentIntelligenceService:
                     llm_resp.model,
                     "; ".join(llm_resp.fallback_chain) or "LLM fallback to deterministic",
                 )
-            return llm_resp.text.strip(), True, llm_resp.provider.value, llm_resp.model, None
+            response_text = llm_resp.text.strip()
+            unsupported_amounts = (
+                _currency_amount_values(response_text)
+                - _currency_amount_values(rag_context)
+            )
+            if unsupported_amounts:
+                logger.warning(
+                    "Rejecting LLM synthesis with currency amounts absent from verified context."
+                )
+                return (
+                    None,
+                    False,
+                    llm_resp.provider.value,
+                    llm_resp.model,
+                    "LLM response included a currency amount absent from verified scheme context",
+                )
+            return response_text, True, llm_resp.provider.value, llm_resp.model, None
         except Exception as exc:
             err_msg = sanitize_url(f"{type(exc).__name__}: {str(exc)[:100]}")
             logger.warning(f"LLM synthesis failed ({err_msg}); falling back to deterministic synthesizer.")
