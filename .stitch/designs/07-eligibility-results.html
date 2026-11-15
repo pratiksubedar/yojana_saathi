@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yojana Saathi - Scheme Eligibility Assessment Results</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-variant": "#d8e3fb",
+            "secondary-fixed-dim": "#ffb785",
+            "on-tertiary-fixed-variant": "#005049",
+            "on-tertiary-fixed": "#00201d",
+            "on-primary-fixed": "#0f0069",
+            "outline": "#777587",
+            "primary": "#3525cd",
+            "on-primary-fixed-variant": "#3323cc",
+            "surface-container-highest": "#d8e3fb",
+            "on-surface-variant": "#464555",
+            "background": "#f9f9ff",
+            "on-primary-container": "#dad7ff",
+            "tertiary-fixed": "#89f5e7",
+            "on-primary": "#ffffff",
+            "surface-container": "#e7eeff",
+            "error": "#ba1a1a",
+            "inverse-on-surface": "#ecf1ff",
+            "surface-container-low": "#f0f3ff",
+            "tertiary-container": "#006c63",
+            "surface-container-high": "#dee8ff",
+            "primary-fixed-dim": "#c3c0ff",
+            "primary-container": "#4f46e5",
+            "tertiary-fixed-dim": "#6bd8cb",
+            "on-secondary-fixed-variant": "#713700",
+            "surface-tint": "#4d44e3",
+            "secondary": "#954a00",
+            "on-secondary-container": "#693200",
+            "on-error-container": "#93000a",
+            "outline-variant": "#c7c4d8",
+            "on-error": "#ffffff",
+            "tertiary": "#00524b",
+            "surface-dim": "#cfdaf2",
+            "secondary-fixed": "#ffdcc6",
+            "inverse-surface": "#263143",
+            "inverse-primary": "#c3c0ff",
+            "surface-bright": "#f9f9ff",
+            "secondary-container": "#ff923c",
+            "primary-fixed": "#e2dfff",
+            "surface": "#f9f9ff",
+            "on-surface": "#111c2d",
+            "on-tertiary-container": "#81eddf",
+            "on-secondary-fixed": "#301400",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary": "#ffffff",
+            "on-background": "#111c2d",
+            "error-container": "#ffdad6",
+            "on-tertiary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "0.75rem",
+            "margin": "1rem",
+            "gutter": "1rem",
+            "margin-md": "1.5rem",
+            "gutter-sm": "0.75rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1rem",
+            "space-xl": "1.5rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "display-mobile": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Noto Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "display": ["Plus Jakarta Sans"],
+            "body-md": ["Noto Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Noto Sans"]
+          },
+          "fontSize": {
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "display-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "display": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+            "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col items-center justify-start selection:bg-primary-container selection:text-on-primary-container">
+<!-- Mobile Frame Container -->
+<div class="w-full max-w-md bg-background min-h-screen flex flex-col relative shadow-xl overflow-hidden pb-28">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-inverse-surface flex justify-between items-center w-full px-4 py-3 sticky top-0 z-40">
+<div class="flex items-center space-x-3">
+<button aria-label="Back to chat" class="p-2 rounded-full hover:bg-surface-variant text-on-surface active:scale-98 transition-all duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+</button>
+<div>
+<h1 class="text-headline-sm font-headline-sm font-bold text-primary dark:text-inverse-primary tracking-tight">Yojana Saathi</h1>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Eligibility Results • आपकी पात्रता</p>
+</div>
+</div>
+<div class="flex items-center space-x-2">
+<button class="px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface text-label-md font-label-md flex items-center space-x-1 hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-sm">translate</span>
+<span>हिंदी / EN</span>
+</button>
+</div>
+</header>
+<!-- Sub-banner: Deterministic rule evaluation -->
+<div class="bg-surface-container-low px-4 py-2 border-b border-outline-variant/20 flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center space-x-2 text-label-md font-label-md">
+<span class="material-symbols-outlined text-primary text-base">verified_user</span>
+<span>Deterministic rule evaluation • आधारित आधिकारिक नियमों पर</span>
+</div>
+<span class="text-[11px] bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded-full font-bold">V 2.4</span>
+</div>
+<!-- Main Content Canvas -->
+<main class="flex-1 px-4 py-4 space-y-4 overflow-y-auto">
+<!-- Result Summary Banner -->
+<section class="bg-white dark:bg-inverse-surface border border-outline-variant/30 rounded-xl p-4 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed/20 rounded-full blur-2xl -mr-10 -mt-10 pointer-events-none"></div>
+<div class="flex justify-between items-start mb-3">
+<h2 class="text-headline-md font-headline-md text-on-surface font-bold">Evaluation Complete • पात्रता परिणाम</h2>
+<span class="material-symbols-outlined text-primary">analytics</span>
+</div>
+<!-- Audio Spoken Summary Pill -->
+<div class="bg-primary-fixed/40 dark:bg-inverse-surface border border-primary/20 rounded-xl p-3 mb-4 flex items-center justify-between">
+<div class="flex items-center space-x-2.5">
+<button aria-label="Replay audio summary" class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm" data-weight="fill" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+</button>
+<div class="text-body-sm font-body-sm text-on-surface pr-2">
+<span class="font-bold">🔊 Spoken Summary • सुना गया सारांश:</span> You are eligible for 2 schemes, and possibly eligible for 1 scheme.
+            </div>
+</div>
+</div>
+<!-- Status Count Pills -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="bg-emerald-50 border border-emerald-200 rounded-lg p-2 text-center">
+<div class="text-emerald-700 font-bold text-headline-sm">2</div>
+<div class="text-[11px] font-semibold text-emerald-800 leading-tight">Eligible ✓</div>
+</div>
+<div class="bg-amber-50 border border-amber-200 rounded-lg p-2 text-center">
+<div class="text-amber-700 font-bold text-headline-sm">1</div>
+<div class="text-[11px] font-semibold text-amber-800 leading-tight">Possibly ⚠️</div>
+</div>
+<div class="bg-rose-50 border border-rose-200 rounded-lg p-2 text-center">
+<div class="text-rose-700 font-bold text-headline-sm">1</div>
+<div class="text-[11px] font-semibold text-rose-800 leading-tight">Not Eligible ✗</div>
+</div>
+</div>
+</section>
+<!-- Categorized Scheme Result Cards -->
+<div class="space-y-4">
+<!-- Card 1: ELIGIBLE -->
+<div class="bg-white dark:bg-inverse-surface border-2 border-emerald-500 rounded-xl p-4 shadow-sm relative transition-all hover:shadow-md">
+<div class="flex justify-between items-start gap-2 mb-2">
+<div>
+<span class="inline-block bg-emerald-100 text-emerald-800 text-label-sm font-label-sm px-2.5 py-1 rounded-full mb-1">ELIGIBLE • पात्र ✓</span>
+<h3 class="text-headline-sm font-headline-sm font-bold text-on-surface">PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)</h3>
+</div>
+<span class="material-symbols-outlined text-emerald-600 bg-emerald-50 p-2 rounded-full">check_circle</span>
+</div>
+<div class="space-y-2 my-3 text-body-sm text-on-surface-variant">
+<p><strong class="text-on-surface">Reason:</strong> Age 52 ≥ 18, State: Uttar Pradesh, Small farmer landholder condition satisfied.</p>
+<div class="bg-emerald-50/60 p-2.5 rounded-lg border border-emerald-100 flex items-center space-x-2 text-emerald-900 font-medium">
+<span class="material-symbols-outlined text-base">payments</span>
+<span>₹6,000 / year via Direct Benefit Transfer</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/20 text-[11px] text-outline">
+<span>Source: pmkisan.gov.in • Checked: 01 Nov 2026</span>
+</div>
+<button class="w-full mt-3 bg-emerald-600 hover:bg-emerald-700 text-on-primary py-2.5 px-4 rounded-xl text-label-lg font-label-lg flex items-center justify-center space-x-2 transition-colors active:scale-98">
+<span>View Details &amp; Apply • आवेदन प्रक्रिया देखें</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Card 2: POSSIBLY ELIGIBLE -->
+<div class="bg-white dark:bg-inverse-surface border-2 border-amber-400 rounded-xl p-4 shadow-sm relative transition-all hover:shadow-md">
+<div class="flex justify-between items-start gap-2 mb-2">
+<div>
+<span class="inline-block bg-amber-100 text-amber-800 text-label-sm font-label-sm px-2.5 py-1 rounded-full mb-1">POSSIBLY ELIGIBLE • संभावित पात्र ⚠️</span>
+<h3 class="text-headline-sm font-headline-sm font-bold text-on-surface">PM Awas Yojana - Gramin (PMAY-G)</h3>
+</div>
+<span class="material-symbols-outlined text-amber-600 bg-amber-50 p-2 rounded-full">warning</span>
+</div>
+<div class="space-y-2 my-3 text-body-sm text-on-surface-variant">
+<p><strong class="text-on-surface">Missing Information:</strong> SECC deprivation category or kuccha house confirmation required to finalize status.</p>
+<div class="bg-amber-50/60 p-2.5 rounded-lg border border-amber-100 flex items-center space-x-2 text-amber-900 font-medium">
+<span class="material-symbols-outlined text-base">help</span>
+<span>Benefit: Up to ₹1.2 Lakh housing assistance</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/20 text-[11px] text-outline">
+<span>Source: pmayg.nic.in • Pending 1 Field</span>
+</div>
+<button class="w-full mt-3 bg-amber-500 hover:bg-amber-600 text-white py-2.5 px-4 rounded-xl text-label-lg font-label-lg flex items-center justify-center space-x-2 transition-colors active:scale-98">
+<span>Answer 1 Question to Verify • अधूरी जानकारी भरें</span>
+<span class="material-symbols-outlined text-sm">edit_note</span>
+</button>
+</div>
+<!-- Card 3: NOT ELIGIBLE -->
+<div class="bg-white dark:bg-inverse-surface border-2 border-rose-300 rounded-xl p-4 shadow-sm relative opacity-9rip transition-all hover:opacity-100">
+<div class="flex justify-between items-start gap-2 mb-2">
+<div>
+<span class="inline-block bg-rose-100 text-rose-800 text-label-sm font-label-sm px-2.5 py-1 rounded-full mb-1">NOT ELIGIBLE • अपात्र ✗</span>
+<h3 class="text-headline-sm font-headline-sm font-bold text-on-surface">Pradhan Mantri Matru Vandana Yojana (PMMVY)</h3>
+</div>
+<span class="material-symbols-outlined text-rose-600 bg-rose-50 p-2 rounded-full">cancel</span>
+</div>
+<div class="space-y-2 my-3 text-body-sm text-on-surface-variant">
+<p><strong class="text-on-surface">Rule Reason:</strong> Condition not met: Scheme is exclusively for pregnant and lactating mothers for the first living child.</p>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/20 text-[11px] text-outline">
+<span>Source: wcd.gov.in • Rule ID: M-04</span>
+</div>
+<button class="w-full mt-3 bg-surface-container-high hover:bg-surface-variant text-on-surface py-2.5 px-4 rounded-xl text-label-lg font-label-lg flex items-center justify-center space-x-2 transition-colors active:scale-98">
+<span>Why Not Eligible? • कारण समझें</span>
+<span class="material-symbols-outlined text-sm">info</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Sticky Bottom Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md p-4 border-t border-outline-variant/20 shadow-lg z-50 flex flex-col space-y-2">
+<button class="w-full bg-primary-container hover:bg-primary text-on-primary py-3 px-4 rounded-xl text-label-lg font-label-lg flex items-center justify-center space-x-2 shadow-md active:scale-98 transition-all">
+<span class="material-symbols-outlined text-lg">bookmark_added</span>
+<span>Save Results to My Locker • लॉकर में सुरक्षित करें</span>
+</button>
+<button class="w-full bg-surface-container hover:bg-surface-container-high text-on-surface py-2.5 px-4 rounded-xl text-label-lg font-label-lg flex items-center justify-center space-x-2 transition-colors active:scale-98">
+<span class="material-symbols-outlined text-lg">chat</span>
+<span>Ask Follow-up Question • सवाल पूछें</span>
+</button>
+</div>
+</div>
+</body></html>

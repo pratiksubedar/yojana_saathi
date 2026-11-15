@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4338CA" />
+      <stop offset="100%" stop-color="#312E81" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="128" fill="url(#bg-grad)" />
+
+  <!-- Protective Inner Shield Contour -->
+  <path d="M256 64 C360 64 416 112 416 224 C416 344 296 416 256 448 C216 416 96 344 96 224 C96 112 152 64 256 64 Z"
+        fill="#FFFFFF" fill-opacity="0.08" />
+
+  <!-- Main Microphone & Soundwave Motif -->
+  <g filter="url(#shadow)">
+    <!-- Central Microphone Capsule -->
+    <rect x="216" y="140" width="80" height="150" rx="40" fill="#FFFFFF" />
+    
+    <!-- Microphone Cradle Arc -->
+    <path d="M168 230 C168 290 204 330 256 330 C308 330 344 290 344 230" 
+          fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" />
+    
+    <!-- Microphone Stem & Base -->
+    <line x1="256" y1="330" x2="256" y2="390" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" />
+    <line x1="196" y1="390" x2="316" y2="390" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" />
+
+    <!-- AI Voice Sparkle Accent (Saffron / Orange) -->
+    <path d="M360 140 Q385 140 385 115 Q385 140 410 140 Q385 140 385 165 Q385 140 360 140 Z" fill="url(#accent-grad)" />
+    <circle cx="395" cy="180" r="8" fill="#FDBA74" />
+  </g>
+</svg>
+

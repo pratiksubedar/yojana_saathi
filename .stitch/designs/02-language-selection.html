@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yojana Saathi | योजना साथी - Language Selection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface": "#f9f9ff",
+            "inverse-surface": "#263143",
+            "on-primary": "#ffffff",
+            "surface-container-high": "#dee8ff",
+            "secondary-fixed": "#ffdcc6",
+            "tertiary-fixed-dim": "#6bd8cb",
+            "primary-fixed-dim": "#c3c0ff",
+            "on-error-container": "#93000a",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed-variant": "#713700",
+            "surface-tint": "#4d44e3",
+            "surface-dim": "#cfdaf2",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#00201d",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-container": "#006c63",
+            "on-secondary-fixed": "#301400",
+            "primary-fixed": "#e2dfff",
+            "error-container": "#ffdad6",
+            "on-background": "#111c2d",
+            "surface-container-highest": "#d8e3fb",
+            "surface-bright": "#f9f9ff",
+            "secondary": "#954a00",
+            "on-secondary-container": "#693200",
+            "primary-container": "#4f46e5",
+            "background": "#f9f9ff",
+            "tertiary-fixed": "#89f5e7",
+            "on-tertiary-container": "#81eddf",
+            "on-surface-variant": "#464555",
+            "surface-container-low": "#f0f3ff",
+            "error": "#ba1a1a",
+            "outline": "#777587",
+            "on-primary-fixed": "#0f0069",
+            "on-surface": "#111c2d",
+            "inverse-on-surface": "#ecf1ff",
+            "surface-variant": "#d8e3fb",
+            "secondary-fixed-dim": "#ffb785",
+            "on-primary-fixed-variant": "#3323cc",
+            "on-primary-container": "#dad7ff",
+            "secondary-container": "#ff923c",
+            "on-tertiary-fixed-variant": "#005049",
+            "tertiary": "#00524b",
+            "surface-container": "#e7eeff",
+            "inverse-primary": "#c3c0ff",
+            "outline-variant": "#c7c4d8",
+            "on-secondary": "#ffffff",
+            "primary": "#3525cd"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "gutter-sm": "0.75rem",
+            "gutter": "1rem",
+            "margin": "1rem",
+            "space-lg": "1rem",
+            "space-xl": "1.5rem",
+            "space-md": "0.75rem",
+            "margin-md": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Plus Jakarta Sans"],
+            "body-md": ["Noto Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Noto Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "display-mobile": ["Plus Jakarta Sans"],
+            "display": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Noto Sans"]
+          },
+          "fontSize": {
+            "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+            "display-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }],
+            "display": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+            "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col justify-between selection:bg-primary-container selection:text-on-primary">
+<!-- TopAppBar Shell -->
+<header class="bg-surface sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-4 py-3">
+<button aria-label="Back" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-all active:scale-98">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-headline-md text-headline-md-mobile text-primary text-center truncate px-2">Select Language</h1>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+        Step 1 of 2 • चरण 1
+      </span>
+</div>
+<!-- Direct Sub-banner -->
+<div class="bg-surface-container-low px-4 py-2 border-b border-outline-variant/10 text-center">
+<p class="font-body-sm text-on-surface-variant text-xs">Unofficial citizen information assistant • गैर-सरकारी सहायक</p>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 max-w-lg mx-auto w-full px-4 py-6 space-y-xl pb-32">
+<!-- Hero Instructions Section -->
+<section class="space-y-sm">
+<div class="space-y-xs">
+<h2 class="font-display-mobile text-display-mobile text-on-background">Choose Your Language</h2>
+<h2 class="font-headline-md text-headline-md text-primary">अपनी भाषा चुनें</h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+        Select the language you want to speak and read in. The assistant will understand your voice and explain schemes in this language.
+      </p>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant text-xs font-label-md">
+<span class="material-symbols-outlined text-sm">sync</span>
+<span>You can change your language anytime in settings • आप कभी भी भाषा बदल सकते हैं</span>
+</div>
+</section>
+<!-- Language Selection List -->
+<section aria-label="Language selection options" class="space-y-md">
+<!-- Option A: Hindi (Selected) -->
+<div class="language-card relative bg-white border-2 border-primary-container rounded-xl p-4 shadow-sm hover:border-primary transition-all cursor-pointer flex items-center justify-between" id="card-hi" onclick="selectLanguage('hi')">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container font-bold text-lg">
+            हि
+          </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">हिन्दी</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm">(Hindi)</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-0.5">प्राथमिक भाषा • Primary</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors" onclick="event.stopPropagation(); playAudio('hi')" title="सुनें" type="button">
+<span class="material-symbols-outlined">volume_up</span>
+</button>
+<div class="w-6 h-6 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+</div>
+</div>
+<!-- Option B: Tamil -->
+<div class="language-card relative bg-white border border-outline-variant/40 rounded-xl p-4 shadow-sm hover:border-primary/50 transition-all cursor-pointer flex items-center justify-between" id="card-ta" onclick="selectLanguage('ta')">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface font-bold text-lg">
+            த
+          </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">தமிழ்</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm">(Tamil)</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-0.5">மண்டல மொழி • Regional</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors" onclick="event.stopPropagation(); playAudio('ta')" title="கேளுங்கள்" type="button">
+<span class="material-symbols-outlined">volume_up</span>
+</button>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant/60 flex items-center justify-center"></div>
+</div>
+</div>
+<!-- Option C: Bengali -->
+<div class="language-card relative bg-white border border-outline-variant/40 rounded-xl p-4 shadow-sm hover:border-primary/50 transition-all cursor-pointer flex items-center justify-between" id="card-bn" onclick="selectLanguage('bn')">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface font-bold text-lg">
+            বা
+          </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">বাংলা</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm">(Bengali)</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-0.5">மண்டல மொழி • Regional</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors" onclick="event.stopPropagation(); playAudio('bn')" title="শুনুন" type="button">
+<span class="material-symbols-outlined">volume_up</span>
+</button>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant/60 flex items-center justify-center"></div>
+</div>
+</div>
+<!-- Option D: English -->
+<div class="language-card relative bg-white border border-outline-variant/40 rounded-xl p-4 shadow-sm hover:border-primary/50 transition-all cursor-pointer flex items-center justify-between" id="card-en" onclick="selectLanguage('en')">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface font-bold text-lg">
+            En
+          </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">English</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm">(English)</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-0.5">Global • Standard</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors" onclick="event.stopPropagation(); playAudio('en')" title="Listen" type="button">
+<span class="material-symbols-outlined">volume_up</span>
+</button>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant/60 flex items-center justify-center"></div>
+</div>
+</div>
+<p class="text-center text-xs text-on-surface-variant pt-2">More Indian languages coming soon • अन्य भारतीय भाषाएं जल्द आ रही हैं</p>
+</section>
+<!-- Voice Sample / Confirmation Banner -->
+<section class="bg-surface-container-low border border-outline-variant/20 rounded-xl p-4 space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-base">assistant</span>
+<span class="font-label-md text-label-md">Voice Sample Preview • आवाज़ नमूना</span>
+</div>
+<span class="material-symbols-outlined text-primary animate-pulse">sound_detection_dog_barking</span>
+</div>
+<blockquote class="font-headline-sm text-headline-sm text-on-surface bg-white p-3 rounded-lg border border-outline-variant/20 shadow-xs" id="sample-quote">
+        "नमस्ते! मैं सरकारी योजनाओं के लिए आपका साथी हूँ।"
+      </blockquote>
+<div class="flex items-center gap-2 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-tertiary">verified</span>
+<span>Voice assistant will use natural localized accent.</span>
+</div>
+</section>
+</main>
+<!-- Action Footer (Sticky Bottom) -->
+<footer class="fixed bottom-0 left-0 right-0 bg-surface/95 backdrop-blur-md border-t border-outline-variant/10 p-4 z-40">
+<div class="max-w-lg mx-auto flex flex-col gap-3">
+<button class="w-full h-12 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-xl shadow-md hover:bg-primary transition-all active:scale-98 flex items-center justify-center gap-2" id="continue-btn">
+<span>Continue with Hindi • हिन्दी में आगे बढ़ें</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<div class="text-center">
+<button class="text-primary font-label-md text-label-md hover:underline" type="button">
+          Need help choosing? • सहायता चाहिए?
+        </button>
+</div>
+</div>
+</footer>
+<!-- Micro-interaction Script -->
+<script>
+    const languageData = {
+      hi: {
+        name: 'Hindi • हिन्दी',
+        quote: 'नमस्ते! मैं सरकारी योजनाओं के लिए आपका साथी हूँ।',
+        btnText: 'Continue with Hindi • हिन्दी में आगे बढ़ें'
+      },
+      ta: {
+        name: 'Tamil • தமிழ்',
+        quote: 'வணக்கம்! அரசாங்க திட்டங்களுக்கான உங்கள் தோழன் நான்.',
+        btnText: 'Continue with Tamil • தமிழில் தொடரவும்'
+      },
+      bn: {
+        name: 'Bengali • বাংলা',
+        quote: 'নমস্কার! সরকারি প্রকল্পের জন্য আমি আপনার সাথী।',
+        btnText: 'Continue with Bengali • বাংলায় চালিয়ে যান'
+      },
+      en: {
+        name: 'English',
+        quote: 'Hello! I am your companion for government welfare schemes.',
+        btnText: 'Continue with English'
+      }
+    };
+
+    function selectLanguage(langCode) {
+      // Reset all cards
+      document.querySelectorAll('.language-card').forEach(card => {
+        card.classList.remove('border-2', 'border-primary-container', 'bg-white');
+        card.classList.add('border', 'border-outline-variant/40', 'bg-white');
+        const checkDiv = card.querySelector('.w-6.h-6');
+        checkDiv.className = 'w-6 h-6 rounded-full border-2 border-outline-variant/60 flex items-center justify-center';
+        checkDiv.innerHTML = '';
+      });
+
+      // Highlight selected card
+      const selectedCard = document.getElementById(`card-${langCode}`);
+      selectedCard.classList.remove('border', 'border-outline-variant/40');
+      selectedCard.classList.add('border-2', 'border-primary-container', 'bg-white');
+      
+      const checkDiv = selectedCard.querySelector('.w-6.h-6');
+      checkDiv.className = 'w-6 h-6 rounded-full bg-primary-container flex items-center justify-center text-on-primary';
+      checkDiv.innerHTML = '<span class="material-symbols-outlined text-sm">check</span>';
+
+      // Update quote & button text
+      document.getElementById('sample-quote').innerText = `"${languageData[langCode].quote}"`;
+      document.getElementById('continue-btn').querySelector('span').innerText = languageData[langCode].btnText;
+    }
+
+    function playAudio(langCode) {
+      // Simulate audio feedback visual
+      const btn = event.currentTarget;
+      btn.classList.add('bg-primary-fixed', 'text-primary');
+      setTimeout(() => {
+        btn.classList.remove('bg-primary-fixed', 'text-primary');
+      }, 600);
+    }
+  </script>
+</body></html>

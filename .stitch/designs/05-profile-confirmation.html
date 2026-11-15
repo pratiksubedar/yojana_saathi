@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yojana Saathi | User Profile &amp; Attribute Confirmation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-fixed-variant": "#713700",
+            "surface-variant": "#d8e3fb",
+            "secondary": "#954a00",
+            "on-secondary-container": "#693200",
+            "on-error": "#ffffff",
+            "primary-fixed": "#e2dfff",
+            "on-secondary-fixed": "#301400",
+            "on-tertiary": "#ffffff",
+            "background": "#f9f9ff",
+            "error-container": "#ffdad6",
+            "on-tertiary-container": "#81eddf",
+            "outline-variant": "#c7c4d8",
+            "surface": "#f9f9ff",
+            "on-surface": "#111c2d",
+            "tertiary-fixed-dim": "#6bd8cb",
+            "surface-container-high": "#dee8ff",
+            "primary": "#3525cd",
+            "surface-dim": "#cfdaf2",
+            "secondary-fixed-dim": "#ffb785",
+            "outline": "#777587",
+            "tertiary": "#00524b",
+            "surface-bright": "#f9f9ff",
+            "primary-fixed-dim": "#c3c0ff",
+            "surface-container": "#e7eeff",
+            "on-primary-fixed": "#0f0069",
+            "on-primary-fixed-variant": "#3323cc",
+            "on-surface-variant": "#464555",
+            "secondary-container": "#ff923c",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed": "#89f5e7",
+            "primary-container": "#4f46e5",
+            "surface-container-low": "#f0f3ff",
+            "on-secondary": "#ffffff",
+            "on-primary": "#ffffff",
+            "on-background": "#111c2d",
+            "secondary-fixed": "#ffdcc6",
+            "inverse-primary": "#c3c0ff",
+            "on-tertiary-fixed": "#00201d",
+            "error": "#ba1a1a",
+            "inverse-surface": "#263143",
+            "tertiary-container": "#006c63",
+            "on-primary-container": "#dad7ff",
+            "inverse-on-surface": "#ecf1ff",
+            "surface-container-highest": "#d8e3fb",
+            "on-tertiary-fixed-variant": "#005049",
+            "surface-tint": "#4d44e3",
+            "on-error-container": "#93000a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xl": "1.5rem",
+            "gutter-sm": "0.75rem",
+            "space-lg": "1rem",
+            "space-md": "0.75rem",
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "margin-md": "1.5rem",
+            "space-sm": "0.5rem",
+            "margin": "1rem"
+          },
+          "fontFamily": {
+            "label-md": ["Plus Jakarta Sans"],
+            "display": ["Plus Jakarta Sans"],
+            "body-lg": ["Noto Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "display-mobile": ["Plus Jakarta Sans"],
+            "body-sm": ["Noto Sans"],
+            "body-md": ["Noto Sans"],
+            "label-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+            "display": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "display-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen pb-40">
+<!-- TopAppBar -->
+<header class="bg-surface-container-lowest sticky top-0 z-40 shadow-sm">
+<div class="flex justify-between items-center w-full px-margin py-space-sm max-w-md mx-auto">
+<div class="flex items-center gap-2">
+<button aria-label="Back to chat" class="p-2 -ml-2 rounded-full hover:bg-surface-container transition-colors active:scale-95 duration-150 text-on-surface">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">Your Profile • आपकी प्रोफ़ाइल</span>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low text-primary font-label-md hover:bg-surface-container transition-colors active:scale-95 duration-150 border border-outline-variant/30 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">translate</span>
+        हिंदी / EN
+      </button>
+</div>
+</header>
+<main class="w-full max-w-md mx-auto px-margin pt-space-md space-y-space-xl">
+<!-- Sub-banner -->
+<div class="bg-surface-container-low border border-outline-variant/40 rounded-xl p-space-md flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-0.5 text-[20px]">info</span>
+<div class="text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-label-lg">Unofficial helper</strong> • Review details before checking eligibility
+      </div>
+</div>
+<!-- Overview & Reassurance -->
+<div class="space-y-space-sm">
+<h1 class="font-headline-md text-headline-md font-bold text-primary">Confirm Your Details • अपनी जानकारी की पुष्टि करें</h1>
+<p class="font-body-md text-on-surface-variant">The rule engine evaluates schemes based on these verified facts. You can correct any misunderstood values.</p>
+</div>
+<!-- Privacy Card -->
+<div class="bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 rounded-xl p-space-md flex items-start gap-3">
+<span class="text-xl">🛡️</span>
+<div class="text-body-sm text-emerald-900 dark:text-emerald-200">
+<strong class="font-label-lg">Data Minimization:</strong> Zero Aadhaar or bank account numbers are collected or stored.
+      </div>
+</div>
+<!-- Attribute Status List -->
+<div class="space-y-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-space-md shadow-sm hover:border-primary/40 transition-all">
+<div class="flex justify-between items-start mb-space-xs">
+<span class="font-label-md text-on-surface-variant">Age • आयु</span>
+<span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span> Confirmed ✓
+          </span>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">52 years</span>
+<button class="px-3 py-1 rounded-lg border border-outline-variant text-primary font-label-md hover:bg-surface-container-low active:scale-95 transition-all">Edit</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-space-md shadow-sm hover:border-primary/40 transition-all">
+<div class="flex justify-between items-start mb-space-xs">
+<span class="font-label-md text-on-surface-variant">State of Residence • राज्य</span>
+<span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span> Confirmed ✓
+          </span>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Uttar Pradesh</span>
+<button class="px-3 py-1 rounded-lg border border-outline-variant text-primary font-label-md hover:bg-surface-container-low active:scale-95 transition-all">Edit</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-space-md shadow-sm hover:border-primary/40 transition-all">
+<div class="flex justify-between items-start mb-space-xs">
+<span class="font-label-md text-on-surface-variant">Occupation • व्यवसाय</span>
+<span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span> Confirmed ✓
+          </span>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Small Farmer / कृषक</span>
+<button class="px-3 py-1 rounded-lg border border-outline-variant text-primary font-label-md hover:bg-surface-container-low active:scale-95 transition-all">Edit</button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-space-md shadow-sm hover:border-primary/40 transition-all">
+<div class="flex justify-between items-start mb-space-xs">
+<span class="font-label-md text-on-surface-variant">Agricultural Land • कृषि भूमि</span>
+<span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span> Confirmed ✓
+          </span>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">1.5 Hectares</span>
+<button class="px-3 py-1 rounded-lg border border-outline-variant text-primary font-label-md hover:bg-surface-container-low active:scale-95 transition-all">Edit</button>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-space-md shadow-sm hover:border-primary/40 transition-all">
+<div class="flex justify-between items-start mb-space-xs">
+<span class="font-label-md text-on-surface-variant">Annual Household Income • वार्षिक आय</span>
+<span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span> Confirmed ✓
+          </span>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Under ₹2.5 Lakh</span>
+<button class="px-3 py-1 rounded-lg border border-outline-variant text-primary font-label-md hover:bg-surface-container-low active:scale-95 transition-all">Edit</button>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-lowest border border-amber-300 rounded-xl p-space-md shadow-sm">
+<div class="flex justify-between items-start mb-space-xs">
+<span class="font-label-md text-on-surface-variant">Social Category • सामाजिक वर्ग</span>
+<span class="px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">warning</span> Unconfirmed ⚠️
+          </span>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">OBC</span>
+<button class="px-3 py-1 rounded-lg bg-amber-500 text-white font-label-md hover:bg-amber-600 active:scale-95 transition-all shadow-sm">Verify / बदलें</button>
+</div>
+</div>
+</div>
+<!-- Additional Optional Details Accordion -->
+<details class="bg-surface-container-lowest border border-outline-variant/40 rounded-xl overflow-hidden shadow-sm group">
+<summary class="p-space-md flex justify-between items-center cursor-pointer select-none font-label-lg text-primary hover:bg-surface-container-low transition-colors">
+<span>Add more details to find more schemes (Disability status, Senior citizen, Marital status) • अन्य विवरण जोड़ें</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-space-md pt-0 border-t border-outline-variant/20 space-y-space-md mt-space-sm">
+<div class="grid grid-cols-2 gap-space-sm pt-2">
+<label class="flex items-center gap-2 p-2 rounded-lg border border-outline-variant/40 hover:bg-surface-container-low cursor-pointer">
+<input class="rounded text-primary focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="font-body-sm">Disability Status</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg border border-outline-variant/40 hover:bg-surface-container-low cursor-pointer">
+<input class="rounded text-primary focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="font-body-sm">Senior Citizen</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg border border-outline-variant/40 hover:bg-surface-container-low cursor-pointer">
+<input class="rounded text-primary focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="font-body-sm">Widow / Single Woman</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg border border-outline-variant/40 hover:bg-surface-container-low cursor-pointer">
+<input class="rounded text-primary focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="font-body-sm">Student / Youth</span>
+</label>
+</div>
+</div>
+</details>
+</main>
+<!-- Sticky Action Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/30 fixed bottom-0 left-0 right-0 p-margin max-w-md mx-auto z-40 shadow-lg">
+<div class="flex flex-col gap-2">
+<button class="bg-primary text-on-primary py-3 px-4 rounded-xl font-bold w-full flex items-center justify-center gap-2 shadow-md hover:opacity-95 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[20px]">rule</span>
+        Check Scheme Eligibility • योजना पात्रता जांचें (Run Rule Engine)
+      </button>
+<button class="border border-primary text-primary py-2.5 px-4 rounded-xl font-medium w-full text-center hover:bg-surface-container-low active:scale-95 transition-all">
+        Return to Voice Chat • बातचीत जारी रखें
+      </button>
+</div>
+</footer>
+</body></html>

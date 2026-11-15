@@ -1,0 +1,138 @@
+{
+  "projectId": "12693025408682747803",
+  "projectTitle": "Yojana Saathi",
+  "designSystem": {
+    "assetId": "assets/17848978814858099422",
+    "displayName": "Yojana Saathi Design System",
+    "theme": {
+      "headlineFont": "PLUS_JAKARTA_SANS",
+      "bodyFont": "NOTO_SANS",
+      "colorMode": "LIGHT",
+      "roundness": "ROUND_TWELVE",
+      "customColor": "#4F46E5",
+      "overridePrimaryColor": "#4F46E5",
+      "overrideSecondaryColor": "#E07A24",
+      "overrideTertiaryColor": "#0D9488",
+      "overrideNeutralColor": "#1E293B"
+    }
+  },
+  "screens": [
+    {
+      "index": 1,
+      "id": "1c801cdbb1e249d0afa60543e762e4cb",
+      "batch": "Batch A - Entry & Core",
+      "title": "Home & Welcome Screen",
+      "deviceType": "MOBILE",
+      "htmlPath": ".stitch/designs/01-home-screen.html",
+      "screenshotPath": ".stitch/designs/01-home-screen-refined.png"
+    },
+    {
+      "index": 2,
+      "id": "8c6b900906bc4f518a3061b9a4ec300f",
+      "batch": "Batch A - Entry & Core",
+      "title": "Language Selection Screen",
+      "deviceType": "MOBILE",
+      "htmlPath": ".stitch/designs/02-language-selection.html",
+      "screenshotPath": ".stitch/designs/02-language-selection.png"
+    },
+    {
+      "index": 3,
+      "id": "d89e6035267b48cb9b893e7cb579f80d",
+      "batch": "Batch A - Entry & Core",
+      "title": "Quick Onboarding & Privacy Notice",
+      "deviceType": "MOBILE",
+      "htmlPath": ".stitch/designs/03-onboarding-welcome.html",
+      "screenshotPath": ".stitch/designs/03-onboarding-welcome.png"
+    },
+    {
+      "index": 4,
+      "id": "1d331b0e39e6495383388df93dad9521",
+      "batch": "Batch A - Entry & Core",
+      "title": "Main Voice & Text Conversation Interface",
+      "deviceType": "MOBILE",
+      "htmlPath": ".stitch/designs/04-main-conversation.html",
+      "screenshotPath": ".stitch/designs/04-main-conversation.png"
+    },
+    {
+      "index": 5,
+      "id": "8f6ef60bb1834b8d89e2cd6192ae704a",
+      "batch": "Batch A - Entry & Core",
+      "title": "User Profile Confirmation & Attribute Review",
+      "deviceType": "MOBILE",
+      "htmlPath": ".stitch/designs/05-profile-confirmation.html",
+      "screenshotPath": ".stitch/designs/05-profile-confirmation.png"
+    },
+    {
+      "index": 6,
+      "id": "e2568c656d674bb09f7fc300e25a6639",
+      "batch": "Batch B - Scheme Discovery",
+      "title": "Browse Schemes & Category Directory",
+      "deviceType": "MOBILE",
+      "htmlPath": ".stitch/designs/06-browse-schemes.html",
+      "screenshotPath": ".stitch/designs/06-browse-schemes.png"
+    },
+    {
+      "index": 7,
+      "id": "b5fb7ebf25b74b62adab1b50ecbee7eb",
+      "batch": "Batch B - Scheme Discovery",
+      "title": "Eligibility Assessment Results",
+      "deviceType": "MOBILE",
+      "htmlPath": ".stitch/designs/07-eligibility-results.html",
+      "screenshotPath": ".stitch/designs/07-eligibility-results.png"
+    },
+    {
+      "index": 8,
+      "id": "9f94be5189154c6098bd15c0e3b264fd",
+      "batch": "Batch C - Scheme Assistance",
+      "title": "Individual Scheme Detail (PM-KISAN)",
+      "deviceType": "MOBILE",
+      "htmlPath": ".stitch/designs/08-scheme-detail.html",
+      "screenshotPath": ".stitch/designs/08-scheme-detail.png"
+    },
+    {
+      "index": 9,
+      "id": "53ba94f8ba9347e6881bf9e3da0216a1",
+      "batch": "Batch C - Scheme Assistance",
+      "title": "Required Document Checklist & Application Steps",
+      "deviceType": "MOBILE",
+      "htmlPath": ".stitch/designs/09-document-checklist.html",
+      "screenshotPath": ".stitch/designs/09-document-checklist.png"
+    },
+    {
+      "index": 10,
+      "id": "e5cf0176ebab49e490aa5f57c2e2d670",
+      "batch": "Batch C - Scheme Assistance",
+      "title": "Transparent Ineligibility Explanation & Alternatives",
+      "deviceType": "MOBILE",
+      "htmlPath": ".stitch/designs/10-why-not-eligible.html",
+      "screenshotPath": ".stitch/designs/10-why-not-eligible.png"
+    },
+    {
+      "index": 11,
+      "id": "f2f493d53b524e869301a8638686c907",
+      "batch": "Batch D - User Dashboard",
+      "title": "My Locker / Saved Schemes & Offline Checklist",
+      "deviceType": "MOBILE",
+      "htmlPath": ".stitch/designs/11-my-locker.html",
+      "screenshotPath": ".stitch/designs/11-my-locker.png"
+    },
+    {
+      "index": 12,
+      "id": "079a8bedc930432789e17c0b0992796a",
+      "batch": "Batch D - User Dashboard",
+      "title": "User Profile, Language Preferences & Settings",
+      "deviceType": "MOBILE",
+      "htmlPath": ".stitch/designs/12-settings-profile.html",
+      "screenshotPath": ".stitch/designs/12-settings-profile.png"
+    },
+    {
+      "index": 13,
+      "id": "4f86b533e08847148282d10f29ed3723",
+      "batch": "Batch D - User Dashboard & Resilience",
+      "title": "Error, Voice Fallback & Safe Refusal States",
+      "deviceType": "MOBILE",
+      "htmlPath": ".stitch/designs/13-error-fallback.html",
+      "screenshotPath": ".stitch/designs/13-error-fallback.png"
+    }
+  ]
+}

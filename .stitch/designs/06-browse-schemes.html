@@ -1,0 +1,315 @@
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yojana Saathi - Browse Schemes Directory</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-container": "#dad7ff",
+            "error-container": "#ffdad6",
+            "tertiary-container": "#006c63",
+            "surface-dim": "#cfdaf2",
+            "surface-container-lowest": "#ffffff",
+            "outline-variant": "#c7c4d8",
+            "surface-container-low": "#f0f3ff",
+            "surface-container-highest": "#d8e3fb",
+            "surface-container-high": "#dee8ff",
+            "surface-container": "#e7eeff",
+            "secondary-fixed-dim": "#ffb785",
+            "on-secondary-fixed": "#301400",
+            "background": "#f9f9ff",
+            "on-primary": "#ffffff",
+            "inverse-surface": "#263143",
+            "on-error": "#ffffff",
+            "error": "#ba1a1a",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#ff923c",
+            "outline": "#777587",
+            "on-tertiary": "#ffffff",
+            "secondary-fixed": "#ffdcc6",
+            "secondary": "#954a00",
+            "surface": "#f9f9ff",
+            "on-surface": "#111c2d",
+            "primary-fixed-dim": "#c3c0ff",
+            "on-primary-fixed-variant": "#3323cc",
+            "surface-bright": "#f9f9ff",
+            "primary": "#3525cd",
+            "tertiary-fixed-dim": "#6bd8cb",
+            "on-secondary-container": "#693200",
+            "on-tertiary-fixed": "#00201d",
+            "on-secondary-fixed-variant": "#713700",
+            "on-surface-variant": "#464555",
+            "inverse-on-surface": "#ecf1ff",
+            "inverse-primary": "#c3c0ff",
+            "primary-fixed": "#e2dfff",
+            "on-background": "#111c2d",
+            "tertiary-fixed": "#89f5e7",
+            "on-tertiary-fixed-variant": "#005049",
+            "on-primary-fixed": "#0f0069",
+            "on-error-container": "#93000a",
+            "primary-container": "#4f46e5"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "0.75rem",
+            "margin": "1rem",
+            "space-sm": "0.5rem",
+            "margin-md": "1.5rem",
+            "space-xl": "1.5rem",
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "gutter-sm": "0.75rem",
+            "space-lg": "1rem"
+          },
+          "fontFamily": {
+            "body-md": ["Noto Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Noto Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "display": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "display-mobile": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Noto Sans"]
+          },
+          "fontSize": {
+            "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "display": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "display-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container pb-28">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-50 bg-surface shadow-sm dark:shadow-none flex justify-between items-center w-full px-4 py-3">
+<div class="flex items-center space-x-3">
+<button aria-label="Back" class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-surface-variant text-on-surface transition-all duration-200">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<div>
+<h1 class="text-headline-sm font-headline-sm text-primary font-bold">Browse Schemes • योजनाएं खोजें</h1>
+</div>
+</div>
+<button aria-label="Translate" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container hover:bg-surface-variant text-primary transition-all duration-200">
+<span class="material-symbols-outlined text-[22px]">translate</span>
+</button>
+</header>
+<!-- Sub-banner -->
+<div class="bg-surface-container-low px-4 py-2 border-b border-surface-variant text-center">
+<p class="text-body-sm text-on-surface-variant font-medium">Verified government welfare scheme directory • आधिकारिक योजना संग्रह</p>
+</div>
+<!-- Sticky Search & Category Filters Container -->
+<div class="sticky top-[57px] z-40 bg-surface/95 backdrop-blur-md pt-3 pb-2 shadow-xs">
+<!-- Search Input -->
+<div class="px-4 mb-3">
+<div class="relative flex items-center">
+<span class="absolute left-3 text-outline material-symbols-outlined text-[20px]">search</span>
+<input class="w-full h-12 pl-10 pr-4 bg-surface-container-lowest border border-outline-variant rounded-xl text-on-surface placeholder:text-outline text-body-md focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search by scheme name, ministry, or benefit... • खोजें" type="text"/>
+</div>
+</div>
+<!-- Filter Toggle: Central vs State Schemes -->
+<div class="px-4 mb-3">
+<div class="grid grid-cols-2 p-1 bg-surface-container rounded-xl">
+<button class="py-2 text-center text-label-lg font-label-lg bg-surface text-primary rounded-lg shadow-xs transition-all">Central Schemes • केंद्र सरकार</button>
+<button class="py-2 text-center text-label-lg font-label-lg text-on-surface-variant hover:text-on-surface transition-all">State Schemes • राज्य सरकार</button>
+</div>
+</div>
+<!-- Horizontal Scrollable Category Chips -->
+<div class="flex overflow-x-auto px-4 space-x-2 pb-2 no-scrollbar scroll-smooth">
+<button class="flex-shrink-0 h-9 px-4 rounded-full bg-primary text-on-primary text-label-md font-label-md flex items-center space-x-1 shadow-xs">
+<span>All Schemes (30)</span>
+</button>
+<button class="flex-shrink-0 h-9 px-4 rounded-full bg-surface-container-highest text-on-surface-variant text-label-md font-label-md flex items-center space-x-1 hover:bg-surface-variant transition-all">
+<span>Agriculture &amp; Farming (8)</span>
+</button>
+<button class="flex-shrink-0 h-9 px-4 rounded-full bg-surface-container-highest text-on-surface-variant text-label-md font-label-md flex items-center space-x-1 hover:bg-surface-variant transition-all">
+<span>Health &amp; Insurance (6)</span>
+</button>
+<button class="flex-shrink-0 h-9 px-4 rounded-full bg-surface-container-highest text-on-surface-variant text-label-md font-label-md flex items-center space-x-1 hover:bg-surface-variant transition-all">
+<span>Housing &amp; Shelter (4)</span>
+</button>
+<button class="flex-shrink-0 h-9 px-4 rounded-full bg-surface-container-highest text-on-surface-variant text-label-md font-label-md flex items-center space-x-1 hover:bg-surface-variant transition-all">
+<span>Small Business &amp; Loans (5)</span>
+</button>
+<button class="flex-shrink-0 h-9 px-4 rounded-full bg-surface-container-highest text-on-surface-variant text-label-md font-label-md flex items-center space-x-1 hover:bg-surface-variant transition-all">
+<span>Social Welfare (7)</span>
+</button>
+</div>
+</div>
+<!-- Catalogue Count & Verification Banner -->
+<div class="px-4 py-3 mx-4 mt-3 bg-surface-container-low rounded-xl flex flex-col space-y-1 border border-outline-variant/40">
+<div class="flex items-center justify-between text-body-sm text-on-surface font-medium">
+<span>Showing 30 Central Schemes</span>
+<span class="text-xs bg-tertiary-container/20 text-tertiary-container px-2 py-0.5 rounded-full font-semibold">Catalogue Verified</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span>सत्यापन तिथि: Nov 2026</span>
+<span class="text-xs italic">Prototype Catalogue • myScheme data</span>
+</div>
+</div>
+<!-- Scheme Cards List -->
+<main class="px-4 mt-4 space-y-4">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/60 shadow-xs hover:shadow-md transition-all">
+<div class="flex items-start justify-between gap-2 mb-2">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md text-label-sm font-label-sm bg-surface-container text-primary">Ministry of Agriculture &amp; Farmers Welfare</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-[#FFF7ED] text-[#C2410C]">Central</span>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface mb-1">PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)</h2>
+<div class="my-3 p-3 bg-[#ECFDF5] rounded-lg border border-[#A7F3D0]">
+<p class="text-body-sm text-[#065F46] font-semibold flex items-center">
+<span class="material-symbols-outlined text-[18px] mr-1.5 text-[#059669]">verified</span>
+          ₹6,000 / year in 3 direct benefit installments
+        </p>
+</div>
+<div class="space-y-1.5 mb-4 text-body-sm text-on-surface-variant">
+<p><strong class="text-on-surface">Target Audience:</strong> Small &amp; Marginal Landholding Farmers</p>
+<p class="flex items-center text-xs text-primary font-medium">
+<span class="material-symbols-outlined text-[14px] mr-1">link</span>
+          Official Portal: pmkisan.gov.in ✓
+        </p>
+</div>
+<button class="w-full h-11 bg-primary hover:bg-primary/90 text-on-primary font-label-lg rounded-xl flex items-center justify-center space-x-2 transition-all active:scale-[0.98]">
+<span>Check Eligibility • पात्रता जांचें</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/60 shadow-xs hover:shadow-md transition-all">
+<div class="flex items-start justify-between gap-2 mb-2">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md text-label-sm font-label-sm bg-surface-container text-primary">Ministry of Health &amp; Family Welfare</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-[#FFF7ED] text-[#C2410C]">Central</span>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface mb-1">Ayushman Bharat PM-JAY</h2>
+<div class="my-3 p-3 bg-[#ECFDF5] rounded-lg border border-[#A7F3D0]">
+<p class="text-body-sm text-[#065F46] font-semibold flex items-center">
+<span class="material-symbols-outlined text-[18px] mr-1.5 text-[#059669]">verified</span>
+          ₹5,00,000 cashless health insurance per family / year
+        </p>
+</div>
+<div class="space-y-1.5 mb-4 text-body-sm text-on-surface-variant">
+<p><strong class="text-on-surface">Target Audience:</strong> Low-income households &amp; rural families</p>
+<p class="flex items-center text-xs text-primary font-medium">
+<span class="material-symbols-outlined text-[14px] mr-1">link</span>
+          Official Portal: pmjay.gov.in ✓
+        </p>
+</div>
+<button class="w-full h-11 bg-primary hover:bg-primary/90 text-on-primary font-label-lg rounded-xl flex items-center justify-center space-x-2 transition-all active:scale-[0.98]">
+<span>Check Eligibility • पात्रता जांचें</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/60 shadow-xs hover:shadow-md transition-all">
+<div class="flex items-start justify-between gap-2 mb-2">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md text-label-sm font-label-sm bg-surface-container text-primary">Ministry of Rural Development</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-[#FFF7ED] text-[#C2410C]">Central</span>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface mb-1">PM Awas Yojana - Gramin (PMAY-G)</h2>
+<div class="my-3 p-3 bg-[#ECFDF5] rounded-lg border border-[#A7F3D0]">
+<p class="text-body-sm text-[#065F46] font-semibold flex items-center">
+<span class="material-symbols-outlined text-[18px] mr-1.5 text-[#059669]">verified</span>
+          Up to ₹1,20,000 financial assistance for pucca house
+        </p>
+</div>
+<div class="space-y-1.5 mb-4 text-body-sm text-on-surface-variant">
+<p><strong class="text-on-surface">Target Audience:</strong> Rural families living in houseless/zero-room dwellings</p>
+<p class="flex items-center text-xs text-primary font-medium">
+<span class="material-symbols-outlined text-[14px] mr-1">link</span>
+          Official Portal: pmayg.nic.in ✓
+        </p>
+</div>
+<button class="w-full h-11 bg-primary hover:bg-primary/90 text-on-primary font-label-lg rounded-xl flex items-center justify-center space-x-2 transition-all active:scale-[0.98]">
+<span>Check Eligibility • पात्रता जांचें</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/60 shadow-xs hover:shadow-md transition-all">
+<div class="flex items-start justify-between gap-2 mb-2">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md text-label-sm font-label-sm bg-surface-container text-primary">Ministry of Housing &amp; Urban Affairs</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-[#FFF7ED] text-[#C2410C]">Central</span>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface mb-1">PM SVANidhi</h2>
+<div class="my-3 p-3 bg-[#ECFDF5] rounded-lg border border-[#A7F3D0]">
+<p class="text-body-sm text-[#065F46] font-semibold flex items-center">
+<span class="material-symbols-outlined text-[18px] mr-1.5 text-[#059669]">verified</span>
+          Collateral-free working capital loan up to ₹50,000
+        </p>
+</div>
+<div class="space-y-1.5 mb-4 text-body-sm text-on-surface-variant">
+<p><strong class="text-on-surface">Target Audience:</strong> Street vendors operating in urban and semi-urban areas</p>
+<p class="flex items-center text-xs text-primary font-medium">
+<span class="material-symbols-outlined text-[14px] mr-1">link</span>
+          Official Portal: pmsvanidhi.mohua.gov.in ✓
+        </p>
+</div>
+<button class="w-full h-11 bg-primary hover:bg-primary/90 text-on-primary font-label-lg rounded-xl flex items-center justify-center space-x-2 transition-all active:scale-[0.98]">
+<span>Check Eligibility • पात्रता जांचें</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Sticky Floating Action Pill (Bottom, right above bottom nav) -->
+<div class="fixed bottom-20 left-0 right-0 z-40 flex justify-center px-4 pointer-events-none">
+<button class="pointer-events-auto bg-primary-container text-on-primary-container font-label-lg px-6 py-3 rounded-full shadow-lg flex items-center space-x-2 hover:opacity-95 transition-all transform active:scale-95 border border-primary/20">
+<span class="material-symbols-outlined text-[20px] animate-pulse">mic</span>
+<span>Speak to Find Matching Schemes • बोलकर खोजें</span>
+</button>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-2 pt-2 bg-surface shadow-lg dark:shadow-none">
+<!-- Home Tab (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-2 hover:bg-surface-container dark:hover:bg-inverse-surface rounded-2xl transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="text-label-sm font-label-sm mt-1">Home</span>
+</a>
+<!-- Schemes Tab (Active) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-2xl px-4 py-2 transition-all duration-200 scale-0.98" href="#">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">folder</span>
+<span class="text-label-sm font-label-sm mt-1 font-bold">Schemes</span>
+</a>
+<!-- Saved Tab (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-2 hover:bg-surface-container dark:hover:bg-inverse-surface rounded-2xl transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-[24px]">bookmark</span>
+<span class="text-label-sm font-label-sm mt-1">Saved</span>
+</a>
+<!-- Profile Tab (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-2 hover:bg-surface-container dark:hover:bg-inverse-surface rounded-2xl transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-[24px]">person</span>
+<span class="text-label-sm font-label-sm mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

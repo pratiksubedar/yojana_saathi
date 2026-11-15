@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yojana Saathi - Voice Civic Welfare Guide</title>
+<!-- Google Fonts: Plus Jakarta Sans, Noto Sans & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-high": "#dee8ff",
+            "on-secondary-fixed-variant": "#713700",
+            "on-secondary-fixed": "#301400",
+            "surface-bright": "#f9f9ff",
+            "on-primary-container": "#dad7ff",
+            "on-background": "#111c2d",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#e2dfff",
+            "tertiary-fixed-dim": "#6bd8cb",
+            "background": "#f9f9ff",
+            "surface": "#f9f9ff",
+            "surface-dim": "#cfdaf2",
+            "on-tertiary-fixed-variant": "#005049",
+            "tertiary": "#00524b",
+            "error-container": "#ffdad6",
+            "surface-container-low": "#f0f3ff",
+            "surface-tint": "#4d44e3",
+            "secondary": "#954a00",
+            "inverse-on-surface": "#ecf1ff",
+            "secondary-fixed": "#ffdcc6",
+            "on-error": "#ffffff",
+            "on-surface": "#111c2d",
+            "outline-variant": "#c7c4d8",
+            "on-tertiary": "#ffffff",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed-variant": "#3323cc",
+            "on-error-container": "#93000a",
+            "inverse-surface": "#263143",
+            "on-surface-variant": "#464555",
+            "on-primary-fixed": "#0f0069",
+            "surface-variant": "#d8e3fb",
+            "inverse-primary": "#c3c0ff",
+            "surface-container-highest": "#d8e3fb",
+            "on-tertiary-fixed": "#00201d",
+            "error": "#ba1a1a",
+            "on-tertiary-container": "#81eddf",
+            "tertiary-fixed": "#89f5e7",
+            "secondary-fixed-dim": "#ffb785",
+            "primary-fixed-dim": "#c3c0ff",
+            "on-secondary-container": "#693200",
+            "tertiary-container": "#006c63",
+            "on-primary": "#ffffff",
+            "primary-container": "#4f46e5",
+            "secondary-container": "#ff923c",
+            "outline": "#777587",
+            "surface-container": "#e7eeff",
+            "primary": "#3525cd"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "0.75rem",
+            "space-xs": "0.25rem",
+            "gutter-sm": "0.75rem",
+            "space-lg": "1rem",
+            "margin-md": "1.5rem",
+            "space-xl": "1.5rem",
+            "margin": "1rem",
+            "gutter": "1rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "label-md": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-sm": [
+              "Plus Jakarta Sans"
+            ],
+            "display-mobile": [
+              "Plus Jakarta Sans"
+            ],
+            "body-lg": [
+              "Noto Sans"
+            ],
+            "body-md": [
+              "Noto Sans"
+            ],
+            "display": [
+              "Plus Jakarta Sans"
+            ],
+            "body-sm": [
+              "Noto Sans"
+            ],
+            "label-sm": [
+              "Plus Jakarta Sans"
+            ],
+            "label-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-md": [
+              "Plus Jakarta Sans"
+            ]
+          },
+          "fontSize": {
+            "label-md": [
+              "12px",
+              {
+                "lineHeight": "16px",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-sm": [
+              "18px",
+              {
+                "lineHeight": "26px",
+                "fontWeight": "600"
+              }
+            ],
+            "display-mobile": [
+              "26px",
+              {
+                "lineHeight": "34px",
+                "fontWeight": "700"
+              }
+            ],
+            "body-lg": [
+              "16px",
+              {
+                "lineHeight": "24px",
+                "fontWeight": "400"
+              }
+            ],
+            "body-md": [
+              "15px",
+              {
+                "lineHeight": "22px",
+                "fontWeight": "400"
+              }
+            ],
+            "display": [
+              "32px",
+              {
+                "lineHeight": "40px",
+                "fontWeight": "700"
+              }
+            ],
+            "body-sm": [
+              "13px",
+              {
+                "lineHeight": "18px",
+                "fontWeight": "400"
+              }
+            ],
+            "label-sm": [
+              "11px",
+              {
+                "lineHeight": "14px",
+                "letterSpacing": "0.04em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-lg": [
+              "14px",
+              {
+                "lineHeight": "20px",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-lg": [
+              "24px",
+              {
+                "lineHeight": "32px",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-md": [
+              "20px",
+              {
+                "lineHeight": "28px",
+                "fontWeight": "600"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .wave-bar {
+      animation: pulse-wave 1.4s ease-in-out infinite alternate;
+    }
+    @keyframes pulse-wave {
+      0% { height: 6px; }
+      100% { height: 26px; }
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex justify-center selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Mobile Frame Wrapper (Max 448px width) -->
+<div class="w-full max-w-md min-h-screen bg-background flex flex-col relative pb-24 shadow-2xl">
+<!-- Top App Bar (Shared Components JSON Anchor) -->
+<header class="sticky top-0 z-40 bg-surface-container-lowest border-b border-outline-variant/30 shadow-sm">
+<div class="flex justify-between items-center w-full px-margin py-space-sm max-w-md mx-auto">
+<!-- Leading Icon & Brand Anchor Headline -->
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="account_balance">account_balance</span>
+</div>
+<div>
+<h1 class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight">Yojana Saathi</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant -mt-0.5">योजना साथी • AI Civic Guide</p>
+</div>
+</div>
+<!-- Trailing Language Selector Pill -->
+<button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-surface-container border border-outline-variant/40 hover:bg-surface-container-high transition-colors active:scale-95" id="langToggleBtn"><span class="material-symbols-outlined text-base text-primary" data-icon="language">language</span><span class="font-label-md text-label-md font-semibold text-primary">🌐 हिन्दी • தமிழ் • বাংলা • EN</span><span class="material-symbols-outlined text-xs text-on-surface-variant" data-icon="expand_more">expand_more</span></button>
+</div>
+<!-- Official Disclaimer Banner -->
+<div class="bg-surface-container px-margin py-1.5 border-t border-outline-variant/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary shrink-0" data-icon="verified_user">verified_user</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Unofficial citizen information assistant • Verify details on official government portals</p>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 px-margin space-y-space-xl pt-space-lg">
+<!-- Hero Section -->
+<section class="space-y-space-lg"><div class="flex flex-wrap items-center gap-2"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold"><span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>🎙️ Voice Enabled • 4 Languages</span><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>Live Civic Assist</span></div><div class="relative overflow-hidden rounded-xl p-space-lg bg-surface-container-lowest border border-outline-variant/40 shadow-sm space-y-space-md"><div class="absolute -right-6 -bottom-6 w-28 h-28 bg-surface-container-high rounded-full blur-2xl opacity-60 pointer-events-none"></div><div><span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider">Citizen First • नागरिक सेवा</span><h2 class="font-display-mobile text-display-mobile text-on-surface tracking-tight mt-0.5">Namaste! Welcome to Yojana Saathi</h2><p class="font-headline-sm text-headline-sm text-primary font-medium mt-1">नमस्ते! योजना साथी में आपका स्वागत है</p></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Find government schemes you qualify for. Speak naturally in your language or explore verified eligibility rules.</p><div class="space-y-space-sm pt-1"><button class="w-full h-14 bg-primary-container hover:bg-primary active:scale-[0.98] transition-all duration-150 rounded-xl flex items-center justify-center gap-space-sm text-on-primary shadow-md" id="voiceStartBtn"><span class="material-symbols-outlined text-3xl" data-icon="mic" data-weight="fill" style="font-variation-settings: 'FILL' 1;">mic</span><span class="font-label-lg text-label-lg font-bold tracking-wide text-base">Start Voice Demo • बोलकर आज़माएं</span><span class="material-symbols-outlined text-lg" data-icon="graphic_eq">graphic_eq</span></button><p class="text-center font-label-sm text-label-sm text-outline">(Interactive voice prototype mode • आवाज़ डेमो)</p><div class="grid grid-cols-2 gap-space-sm pt-1"><button class="h-11 rounded-xl bg-surface-container-lowest border border-outline-variant/60 hover:bg-surface-container-high transition-colors font-label-md text-label-md text-on-surface flex items-center justify-center gap-1.5 active:scale-95"><span class="material-symbols-outlined text-lg text-primary" data-icon="menu_book">menu_book</span><span>Browse Schemes • योजनाएं देखें</span></button><button class="h-11 rounded-xl bg-surface-container-lowest border border-outline-variant/60 hover:bg-surface-container-high transition-colors font-label-md text-label-md text-primary font-semibold flex items-center justify-center gap-1 active:scale-95"><span>Skip to Chat</span><span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span></button></div></div></div></section>
+<!-- Key Features / Value Props Bento -->
+<section class="space-y-space-md"><div class="flex items-center justify-between"><div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Core Trust &amp; Functionality</h3><p class="font-label-sm text-label-sm text-on-surface-variant font-medium">पारदर्शिता और सुरक्षा • Principles</p></div><span class="material-symbols-outlined text-outline-variant" data-icon="shield">shield</span></div><div class="grid grid-cols-1 gap-space-md"><div class="p-space-lg rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex items-start gap-space-md hover:border-primary/40 transition-colors"><div class="w-11 h-11 rounded-xl bg-surface-container-high flex items-center justify-center shrink-0 text-primary"><span class="material-symbols-outlined text-2xl" data-icon="fact_check">fact_check</span></div><div class="space-y-1"><div class="flex items-center gap-2"><h4 class="font-label-lg text-label-lg font-bold text-on-surface">Rule-Based Eligibility</h4><span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-surface-container-highest text-primary">Verified</span></div><p class="font-body-md text-body-md text-on-surface-variant leading-normal">Match results evaluated strictly by official conditions—never AI guesswork.</p></div></div><div class="p-space-lg rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex items-start gap-space-md hover:border-primary/40 transition-colors"><div class="w-11 h-11 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-tertiary"><span class="material-symbols-outlined text-2xl" data-icon="lock">lock</span></div><div class="space-y-1"><div class="flex items-center gap-2"><h4 class="font-label-lg text-label-lg font-bold text-on-surface">Privacy First</h4><span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-surface-container text-tertiary">Secure</span></div><p class="font-body-md text-body-md text-on-surface-variant leading-normal">No Aadhaar numbers, OTPs, or bank details requested. Direct citations to official portals.</p></div></div></div></section>
+<!-- Popular Central Schemes Carousel / Cards -->
+<section class="space-y-space-md"><div class="flex items-center justify-between"><div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Popular Schemes (Demo Preview)</h3><p class="font-label-sm text-label-sm text-on-surface-variant font-medium">प्रमुख योजनाएं • Verified &amp; Active</p></div><span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed text-[11px] font-bold">Sample Data • प्रोटोटाइप</span></div><div class="space-y-space-md"><div class="rounded-xl bg-surface-container-lowest p-space-lg border border-outline-variant/40 shadow-sm space-y-space-sm hover:shadow-md transition-shadow"><div class="flex justify-between items-start"><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-sm text-tertiary" data-icon="agriculture">agriculture</span>Ministry of Agriculture</span><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[11px] font-bold">Direct Benefit</span></div><div><h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">PM-KISAN Samman Nidhi</h4><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Financial assistance for landholding farmer families across India.</p></div><div class="rounded-lg bg-surface-container-low px-space-md py-2 border border-outline-variant/30 flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Benefit Amount</span><span class="font-label-lg text-label-lg font-bold text-tertiary">₹6,000 / year via DBT</span></div><div class="pt-1 flex items-center justify-between"><span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="verified">verified</span>Official Source Linked</span><button class="font-label-md text-label-md font-bold text-primary hover:text-primary-container flex items-center gap-0.5 active:scale-95">Check Eligibility <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span></button></div></div><div class="rounded-xl bg-surface-container-lowest p-space-lg border border-outline-variant/40 shadow-sm space-y-space-sm hover:shadow-md transition-shadow"><div class="flex justify-between items-start"><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-sm text-primary" data-icon="health_and_safety">health_and_safety</span>Ministry of Health</span><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-[11px] font-bold">Health Cover</span></div><div><h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Ayushman Bharat PM-JAY</h4><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Comprehensive cashless inpatient care at impaneled hospitals nationwide.</p></div><div class="rounded-lg bg-surface-container-low px-space-md py-2 border border-outline-variant/30 flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Coverage</span><span class="font-label-lg text-label-lg font-bold text-primary">₹5 Lakh health cover</span></div><div class="pt-1 flex items-center justify-between"><span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="verified">verified</span>Official Source Linked</span><button class="font-label-md text-label-md font-bold text-primary hover:text-primary-container flex items-center gap-0.5 active:scale-95">Check Eligibility <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span></button></div></div><div class="rounded-xl bg-surface-container-lowest p-space-lg border border-outline-variant/40 shadow-sm space-y-space-sm hover:shadow-md transition-shadow"><div class="flex justify-between items-start"><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-sm text-secondary" data-icon="home_work">home_work</span>Ministry of Housing &amp; Urban Affairs</span><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[11px] font-bold">Loan Support</span></div><div><h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">PM SVANidhi</h4><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Working capital loan for urban street vendors and small traders.</p></div><div class="rounded-lg bg-surface-container-low px-space-md py-2 border border-outline-variant/30 flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Loan Support</span><span class="font-label-lg text-label-lg font-bold text-secondary">Working Capital Loan</span></div><div class="pt-1 flex items-center justify-between"><span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="verified">verified</span>Official Source Linked</span><button class="font-label-md text-label-md font-bold text-primary hover:text-primary-container flex items-center gap-0.5 active:scale-95">Check Eligibility <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span></button></div></div></div></section>
+<!-- Trust, Non-Government Status & Footer -->
+<section class="space-y-space-md pt-2"><div class="rounded-xl bg-surface-container-low p-space-md border border-outline-variant/30 space-y-space-sm"><div class="flex items-center gap-2 text-on-surface font-semibold font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-base" data-icon="shield">shield</span>Transparency Notice</div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Yojana Saathi is an independent helper linking to official myScheme and ministry resources.</p></div><div class="grid grid-cols-2 gap-2 text-center pt-2"><a class="p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/20 font-label-md text-label-md text-on-surface-variant hover:text-primary font-semibold" href="#about">About</a><a class="p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/20 font-label-md text-label-md text-on-surface-variant hover:text-primary font-semibold" href="#eligibility">How Eligibility Works</a><a class="p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/20 font-label-md text-label-md text-on-surface-variant hover:text-primary font-semibold" href="#faqs">FAQs</a><a class="p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/20 font-label-md text-label-md text-on-surface-variant hover:text-primary font-semibold" href="#privacy">Privacy</a></div><div class="text-center py-space-sm space-y-1"><p class="font-label-sm text-label-sm text-on-surface-variant">Built for Indian Citizens • Made with Open Civic Data</p><p class="text-[10px] text-outline tracking-wider font-semibold">INDIA WELFARE DIGITAL STACK INITIATIVE</p></div></section>
+</main>
+<!-- Bottom Navigation Bar (Shared Components JSON Anchor) -->
+<!-- Home is semantic active destination -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin py-space-xs max-w-md mx-auto border-t border-outline-variant/30 bg-surface-container-lowest shadow-md">
+<!-- Destination 1: Home (ACTIVE) -->
+<a class="flex flex-col items-center justify-center bg-primary-fixed dark:bg-primary-container text-on-primary-fixed dark:text-on-primary-container rounded-full px-space-md py-space-xs transition-colors active:scale-95 duration-150" href="#home">
+<span class="material-symbols-outlined text-xl" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm font-bold">Home</span>
+</a>
+<!-- Destination 2: Schemes -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary px-space-sm py-space-xs transition-colors active:scale-95 duration-150" href="#schemes">
+<span class="material-symbols-outlined text-xl" data-icon="search">search</span>
+<span class="font-label-sm text-label-sm">Schemes</span>
+</a>
+<!-- Destination 3: Voice AI -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary px-space-sm py-space-xs transition-colors active:scale-95 duration-150" href="#voice">
+<span class="material-symbols-outlined text-xl" data-icon="mic">mic</span>
+<span class="font-label-sm text-label-sm">Voice AI</span>
+</a>
+<!-- Destination 4: My Locker -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary px-space-sm py-space-xs transition-colors active:scale-95 duration-150" href="#locker">
+<span class="material-symbols-outlined text-xl" data-icon="folder">folder</span>
+<span class="font-label-sm text-label-sm">My Locker</span>
+</a>
+</nav>
+</div>
+<!-- Interactive Script for Micro-interactions -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const voiceBtn = document.getElementById('voiceStartBtn');
+      const langBtn = document.getElementById('langToggleBtn');
+
+      if (voiceBtn) {
+        voiceBtn.addEventListener('click', () => {
+          const originalText = voiceBtn.innerHTML;
+          voiceBtn.innerHTML = `
+            <span class="material-symbols-outlined text-2xl animate-spin" data-icon="progress_activity">progress_activity</span>
+            <span class="font-label-lg text-label-lg font-bold">Listening • सुन रहे हैं...</span>
+          `;
+          setTimeout(() => {
+            voiceBtn.innerHTML = originalText;
+          }, 3000);
+        });
+      }
+
+      if (langBtn) {
+        let isHindi = false;
+        langBtn.addEventListener('click', () => {
+          isHindi = !isHindi;
+          const textSpan = langBtn.querySelector('span:nth-child(2)');
+          if (textSpan) {
+            textSpan.textContent = isHindi ? 'English / हिन्दी' : 'हिन्दी / EN';
+          }
+        });
+      }
+    });
+  </script>
+</body></html>

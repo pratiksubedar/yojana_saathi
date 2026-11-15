@@ -1,0 +1,305 @@
+<html lang="hi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yojana Saathi | योजना साथी</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-background": "#111c2d",
+            "outline": "#777587",
+            "inverse-surface": "#263143",
+            "on-primary-fixed-variant": "#3323cc",
+            "on-error-container": "#93000a",
+            "inverse-primary": "#c3c0ff",
+            "primary-fixed": "#e2dfff",
+            "on-secondary-fixed-variant": "#713700",
+            "secondary-container": "#ff923c",
+            "surface-container-low": "#f0f3ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container": "#e7eeff",
+            "on-primary": "#ffffff",
+            "tertiary-fixed": "#89f5e7",
+            "surface-tint": "#4d44e3",
+            "on-surface": "#111c2d",
+            "tertiary": "#00524b",
+            "surface-container-high": "#dee8ff",
+            "primary-fixed-dim": "#c3c0ff",
+            "outline-variant": "#c7c4d8",
+            "error-container": "#ffdad6",
+            "tertiary-fixed-dim": "#6bd8cb",
+            "surface-dim": "#cfdaf2",
+            "secondary": "#954a00",
+            "surface-bright": "#f9f9ff",
+            "surface": "#f9f9ff",
+            "primary-container": "#4f46e5",
+            "secondary-fixed-dim": "#ffb785",
+            "on-primary-fixed": "#0f0069",
+            "on-tertiary-fixed": "#00201d",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed-variant": "#005049",
+            "on-secondary": "#ffffff",
+            "on-tertiary-container": "#81eddf",
+            "background": "#f9f9ff",
+            "inverse-on-surface": "#ecf1ff",
+            "error": "#ba1a1a",
+            "surface-container-highest": "#d8e3fb",
+            "on-secondary-container": "#693200",
+            "tertiary-container": "#006c63",
+            "primary": "#3525cd",
+            "on-surface-variant": "#464555",
+            "on-secondary-fixed": "#301400",
+            "on-primary-container": "#dad7ff",
+            "on-error": "#ffffff",
+            "surface-variant": "#d8e3fb",
+            "secondary-fixed": "#ffdcc6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-md": "1.5rem",
+            "gutter-sm": "0.75rem",
+            "space-xl": "1.5rem",
+            "space-lg": "1rem",
+            "space-md": "0.75rem",
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "margin": "1rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "label-md": ["Plus Jakarta Sans"],
+            "display-mobile": ["Plus Jakarta Sans"],
+            "body-sm": ["Noto Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "display": ["Plus Jakarta Sans"],
+            "body-md": ["Noto Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Noto Sans"],
+            "headline-md": ["Plus Jakarta Sans"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Noto Sans', 'Plus Jakarta Sans', sans-serif;
+      background-color: #f9f9ff;
+      color: #111c2d;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background flex flex-col min-h-screen antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Main App Shell Container -->
+<div class="max-w-md mx-auto w-full bg-surface-container-lowest min-h-screen flex flex-col relative shadow-xl overflow-hidden">
+<!-- TopAppBar -->
+<header class="bg-surface-container-lowest dark:bg-inverse-surface border-b border-outline-variant/30 shadow-sm sticky top-0 z-40">
+<div class="flex justify-between items-center w-full px-margin py-space-sm max-w-md mx-auto">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary text-2xl" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+<h1 class="font-headline-sm text-headline-sm font-bold text-primary dark:text-inverse-primary tracking-tight">Yojana Saathi | योजना साथी</h1>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-low rounded-full border border-outline-variant/40 hover:bg-surface-container-high transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined text-sm text-primary">language</span>
+<span class="font-label-md text-label-md text-on-surface">हिन्दी / EN</span>
+</button>
+<button aria-label="Settings" class="p-space-xs text-on-surface-variant hover:text-primary transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined text-xl">settings</span>
+</button>
+</div>
+</div>
+<!-- Slim transparency banner -->
+<div class="bg-surface-container-low px-margin py-1.5 border-t border-outline-variant/20 flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant text-[11px] font-medium">
+<span class="material-symbols-outlined text-xs text-secondary">verified_user</span>
+<span>Unofficial informational helper • गैर-सरकारी सहायक</span>
+</div>
+<button class="text-[11px] font-bold text-error hover:underline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">logout</span>
+          End Session
+        </button>
+</div>
+</header>
+<!-- 'What I Understood' Live Profile Strip -->
+<section class="bg-surface-container-low border-b border-outline-variant/30 px-margin py-space-sm sticky top-[73px] z-30 backdrop-blur-md bg-opacity-90">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-xs text-primary" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">What I Understood • लाइव प्रोफ़ाइल</span>
+</div>
+<a class="text-xs font-bold text-primary hover:underline flex items-center gap-0.5" href="#profile">
+          Full Profile • पूरा विवरण देखें
+          <span class="material-symbols-outlined text-xs">chevron_right</span>
+</a>
+</div>
+<div class="flex gap-space-sm overflow-x-auto pb-1 no-scrollbar scroll-smooth">
+<div class="flex-shrink-0 bg-surface-container-lowest border border-outline-variant/50 rounded-full px-space-sm py-1 flex items-center gap-1 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="font-label-md text-label-md text-on-surface">Age: 52 (Confirmed ✓)</span>
+</div>
+<div class="flex-shrink-0 bg-surface-container-lowest border border-outline-variant/50 rounded-full px-space-sm py-1 flex items-center gap-1 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="font-label-md text-label-md text-on-surface">State: Uttar Pradesh (Confirmed ✓)</span>
+</div>
+<div class="flex-shrink-0 bg-surface-container-lowest border border-outline-variant/50 rounded-full px-space-sm py-1 flex items-center gap-1 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="font-label-md text-label-md text-on-surface">Occupation: Farmer (Confirmed ✓)</span>
+</div>
+<div class="flex-shrink-0 bg-amber-50 border border-amber-200 rounded-full px-space-sm py-1 flex items-center gap-1 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+<span class="font-label-md text-label-md text-amber-900">Land: Incomplete ❓</span>
+</div>
+</div>
+</section>
+<!-- Chat Stream & Dialogue Area (scrollable) -->
+<main class="flex-1 overflow-y-auto px-margin py-space-xl flex flex-col gap-space-xl pb-48">
+<!-- Timestamp / Session Start -->
+<div class="text-center">
+<span class="inline-block px-space-sm py-0.5 bg-surface-container text-on-surface-variant text-[11px] rounded-full font-medium">
+          Today, 10:42 AM • सुरक्षित सत्र (Secure Session)
+        </span>
+</div>
+<!-- Assistant Message Bubble 1 -->
+<div class="flex items-start gap-space-sm max-w-[90%]">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="bg-surface-container text-on-surface p-space-md rounded-2xl rounded-tl-sm shadow-sm border border-outline-variant/20">
+<p class="font-body-md text-body-md leading-relaxed">
+              Namaste Ramesh ji! I will help you find government schemes you qualify for. Which state do you live in?<br/>
+<span class="text-on-surface-variant mt-1 block font-medium">आप किस राज्य में रहते हैं?</span>
+</p>
+</div>
+<!-- Audio Replay pill -->
+<div>
+<button class="inline-flex items-center gap-1 px-space-sm py-1 bg-surface-container-low hover:bg-surface-container-high border border-outline-variant/40 rounded-full text-primary font-label-md text-label-md transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+<span>🔊 Replay Audio • फिर से सुनें</span>
+</button>
+</div>
+</div>
+</div>
+<!-- User Message Bubble -->
+<div class="flex flex-col items-end gap-space-xs self-end max-w-[90%]">
+<div class="bg-primary-container text-on-primary-container p-space-md rounded-2xl rounded-tr-sm shadow-sm">
+<p class="font-body-md text-body-md leading-relaxed text-white">
+            I live in Uttar Pradesh and I am 52 years old.<br/>
+<span class="text-primary-fixed mt-1 block font-medium">मैं उत्तर प्रदेश में रहता हूँ और खेती करता हूँ।</span>
+</p>
+</div>
+<!-- Transcript Review box with dashed border -->
+<div class="w-full bg-surface-container-lowest border border-dashed border-primary/40 rounded-xl p-space-sm text-on-surface flex items-center justify-between gap-space-sm shadow-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-sm">mic_double</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Recognized Voice • पहचाना गया: <strong class="text-on-surface font-semibold">[Uttar Pradesh, 52 yrs, Farmer]</strong></span>
+</div>
+<button class="flex items-center gap-0.5 text-xs font-bold text-primary bg-primary-fixed/50 hover:bg-primary-fixed px-space-sm py-1 rounded-lg transition-colors">
+<span class="material-symbols-outlined text-xs">edit</span>
+            सुधारें
+          </button>
+</div>
+</div>
+<!-- Assistant Follow-up Question Bubble -->
+<div class="flex items-start gap-space-sm max-w-[90%]">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="bg-surface-container text-on-surface p-space-md rounded-2xl rounded-tl-sm shadow-sm border border-outline-variant/20">
+<p class="font-body-md text-body-md leading-relaxed">
+              Got it! How much agricultural land do you own?<br/>
+<span class="text-on-surface-variant mt-1 block font-medium">आपके पास कितनी कृषि भूमि है?</span>
+</p>
+<!-- Reason helper note -->
+<div class="mt-space-sm pt-space-xs border-t border-outline-variant/30 flex items-center gap-space-xs text-xs text-primary font-medium">
+<span class="material-symbols-outlined text-xs">info</span>
+<span>Required to check PM-KISAN eligibility • पीएम-किसान पात्रता के लिए आवश्यक</span>
+</div>
+</div>
+<div>
+<button class="inline-flex items-center gap-1 px-space-sm py-1 bg-surface-container-low hover:bg-surface-container-high border border-outline-variant/40 rounded-full text-primary font-label-md text-label-md transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined text-xs">volume_up</span>
+<span>🔊 Replay Audio • फिर से सुनें</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Voice & Text Input Dock (Sticky Bottom above navigation) -->
+<div class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-surface-container-lowest border-t border-outline-variant/30 shadow-2xl z-50 px-margin py-space-md flex flex-col gap-space-md backdrop-blur-xl bg-opacity-95">
+<!-- Hero Voice Interaction centerpiece -->
+<div class="flex flex-col items-center justify-center relative">
+<!-- Pulsing ring effect -->
+<div class="absolute w-20 h-20 bg-primary-fixed/60 rounded-full animate-ping opacity-75 pointer-events-none"></div>
+<div class="absolute w-24 h-24 bg-primary-fixed/30 rounded-full animate-pulse opacity-50 pointer-events-none"></div>
+<!-- Centered circular microphone button (68px) -->
+<button aria-label="Tap to Speak" class="w-[68px] h-[68px] bg-primary-container text-on-primary-container rounded-full flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-all relative z-10 group">
+<span class="material-symbols-outlined text-3xl text-white group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">mic</span>
+</button>
+<!-- Animated soundwave graphic simulation -->
+<div class="flex items-center gap-1 mt-space-sm h-6">
+<span class="w-1 bg-primary rounded-full animate-pulse h-3"></span>
+<span class="w-1 bg-primary rounded-full animate-pulse h-6 delay-75"></span>
+<span class="w-1 bg-primary rounded-full animate-pulse h-4 delay-150"></span>
+<span class="w-1 bg-primary rounded-full animate-pulse h-5 delay-200"></span>
+<span class="w-1 bg-primary rounded-full animate-pulse h-2 delay-300"></span>
+<span class="w-1 bg-primary rounded-full animate-pulse h-5"></span>
+<span class="w-1 bg-primary rounded-full animate-pulse h-3 delay-100"></span>
+</div>
+<!-- Status label -->
+<span class="font-label-lg text-label-lg text-primary mt-1 font-bold">
+          Tap to Speak • बोलें
+        </span>
+</div>
+<!-- Text Fallback Bar directly below -->
+<div class="flex items-center gap-space-sm bg-surface-container-low border border-outline-variant/60 rounded-2xl px-space-md py-1.5 focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+<button aria-label="Keyboard mode" class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">keyboard</span>
+</button>
+<input class="w-full bg-transparent border-none focus:outline-none font-body-md text-body-md text-on-surface placeholder:text-outline py-2" placeholder="Type your answer... या यहाँ लिखकर बताएं" type="text"/>
+<button aria-label="Send message" class="w-10 h-10 bg-primary text-white rounded-xl flex items-center justify-center hover:bg-primary-container transition-colors active:scale-95 shadow-sm">
+<span class="material-symbols-outlined text-lg">send</span>
+</button>
+</div>
+<!-- Tiny footer hint -->
+<div class="text-center">
+<span class="text-[10px] text-outline">Yojana Saathi AI v2.4 • Powered by Bhashini &amp; GovData</span>
+</div>
+</div>
+</div>
+<!-- Utility style for hiding scrollbars -->
+<style>
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</body></html>
