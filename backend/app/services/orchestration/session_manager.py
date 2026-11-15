@@ -5,7 +5,7 @@ Stores only allowlisted, validated attributes. Zero PII, zero transcript logging
 """
 
 from datetime import datetime, timezone
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional
 import uuid
 
 from app.schemas.orchestration import CitizenProfileAttributes, EphemeralSessionProfile
