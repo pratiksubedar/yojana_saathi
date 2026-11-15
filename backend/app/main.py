@@ -1,7 +1,9 @@
 from contextlib import asynccontextmanager
+from pathlib import Path
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import FileResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
 
 from sqlalchemy import func, select
 from app.api.router import api_router
@@ -12,6 +14,8 @@ from app.db.models import Scheme
 from app.db.seed import seed_schemes
 from app.db.session import async_session_factory
 from app.services.document_service import DocumentChecklistService
+
+FRONTEND_DIST = Path(__file__).resolve().parents[2] / "dist"
 
 
 @asynccontextmanager
@@ -72,6 +76,9 @@ def create_application() -> FastAPI:
 
     @app.get("/", summary="Root Welcome")
     async def root():
+        index_file = FRONTEND_DIST / "index.html"
+        if index_file.is_file():
+            return FileResponse(index_file)
         return JSONResponse({
             "message": "Welcome to Yojana Saathi API (योजना साथी)",
             "version": settings.version,
@@ -80,6 +87,11 @@ def create_application() -> FastAPI:
             "health_url": f"{settings.api_v1_prefix}/health",
             "supported_languages": ["en", "hi", "kn", "te"]
         })
+
+    # Serve the built React app from the same public service as the API.
+    # This keeps browser requests on one origin and supports client-side routes.
+    if FRONTEND_DIST.is_dir():
+        app.mount("/", StaticFiles(directory=FRONTEND_DIST, html=True), name="frontend")
 
     return app
 
