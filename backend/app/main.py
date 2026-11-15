@@ -4,6 +4,7 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
+from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from sqlalchemy import func, select
 from app.api.router import api_router
@@ -16,6 +17,18 @@ from app.db.session import async_session_factory
 from app.services.document_service import DocumentChecklistService
 
 FRONTEND_DIST = Path(__file__).resolve().parents[2] / "dist"
+
+
+class SPAStaticFiles(StaticFiles):
+    """Serve the frontend entry point for client-side routes such as /assistant."""
+
+    async def get_response(self, path: str, scope):
+        try:
+            return await super().get_response(path, scope)
+        except StarletteHTTPException as exc:
+            if exc.status_code == 404 and "." not in Path(path).name:
+                return await super().get_response("index.html", scope)
+            raise
 
 
 @asynccontextmanager
@@ -91,7 +104,7 @@ def create_application() -> FastAPI:
     # Serve the built React app from the same public service as the API.
     # This keeps browser requests on one origin and supports client-side routes.
     if FRONTEND_DIST.is_dir():
-        app.mount("/", StaticFiles(directory=FRONTEND_DIST, html=True), name="frontend")
+        app.mount("/", SPAStaticFiles(directory=FRONTEND_DIST, html=True), name="frontend")
 
     return app
 
